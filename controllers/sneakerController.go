@@ -6,5 +6,5 @@ import (
 )
 
 func SneakerController(c *fiber.Ctx) error {
-	return c.SendString(shared.GenerateString("sneakerController"))
+	return c.SendString(shared.GenerateString("sneaker controller"))
 }

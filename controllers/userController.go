@@ -6,5 +6,5 @@ import (
 )
 
 func UserController(c *fiber.Ctx) error {
-	return c.SendString(shared.GenerateString("userController"))
+	return c.SendString(shared.GenerateString("user controller"))
 }

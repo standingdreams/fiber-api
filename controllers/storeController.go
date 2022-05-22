@@ -6,5 +6,5 @@ import (
 )
 
 func StoreController(c *fiber.Ctx) error {
-	return c.SendString(shared.GenerateString("storeController"))
+	return c.SendString(shared.GenerateString("store controller"))
 }
