@@ -4,21 +4,19 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/standingdreams/fiber-api/sneakerController"
-	"github.com/standingdreams/fiber-api/storeController"
-	"github.com/standingdreams/fiber-api/userController"
+	"github.com/standingdreams/fiber-api/controllers"
 )
 
 func sneakerHandler(api fiber.Router) {
-	api.Get("/", sneakerController.Controller)
+	api.Get("/", controllers.SneakerController)
 }
 
 func userHandler(api fiber.Router) {
-	api.Get("/", userController.Controller)
+	api.Get("/", controllers.UserController)
 }
 
 func storeHandler(api fiber.Router) {
-	api.Get("/", storeController.Controller)
+	api.Get("/", controllers.StoreController)
 }
 
 func setUpRoutes(app *fiber.App) {
